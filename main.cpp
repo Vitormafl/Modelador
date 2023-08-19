@@ -47,7 +47,7 @@ int main()
         return -1;
     }
 
-    // Tornar a janela o contexto principal do OpenGL
+    // Tornar a janela o contexto principal do OpenGL   
     glfwMakeContextCurrent(window);
 
     // Inicializar GLAD
@@ -57,6 +57,8 @@ int main()
         glfwTerminate();
         return -1;
     }
+
+    //testing commit
 
     // Compilar o Vertex Shader
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -117,7 +119,8 @@ int main()
         -0.5f,  0.5f,   // Coordenadas do primeiro ponto
          0.5f,  0.5f,   // Coordenadas do segundo ponto
          0.5f, -0.5f,    // Coordenadas do terceiro ponto
-        -0.5f, -0.5f
+        -0.5f, -0.5f,
+        0.0f, 0.65f
     };
 
     // Criar um buffer de vértices
